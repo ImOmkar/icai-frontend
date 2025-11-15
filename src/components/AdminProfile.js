@@ -207,7 +207,7 @@ export default function AdminProfile() {
                 <div>
                   <p className="text-sm font-semibold text-amber-800">Read-Only Profile</p>
                   <p className="text-sm text-amber-700 mt-1">
-                    This shows the logged-in admin's basic profile information. Contact system administrator to update these details.
+                    This shows the logged-in user's basic profile information. Contact system administrator to update these details.
                   </p>
                 </div>
               </div>
