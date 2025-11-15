@@ -177,7 +177,7 @@ export default function Login({onLogin}) {
               </div> */}
 
               {/* Action Buttons */}
-              <div className="flex gap-3">
+              {/* <div className="flex gap-3">
                 <button 
                   onClick={verifyOtp} 
                   className="flex-1 bg-gradient-to-br from-sky-400 to-blue-500 text-white rounded-xl px-4 py-3 font-semibold transition-all hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2"
@@ -191,6 +191,29 @@ export default function Login({onLogin}) {
                 >
                   <ArrowLeft size={20} />
                   Back
+                </button>
+              </div> */}
+
+              <div className="flex flex-col sm:flex-row gap-3">
+                <button
+                  onClick={verifyOtp}
+                  className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-semibold
+                            bg-gradient-to-br from-sky-400 to-blue-500 text-white transition-transform hover:shadow-lg hover:scale-105
+                            focus:outline-none focus:ring-4 focus:ring-sky-300 active:scale-100"
+                  aria-label="Verify and sign in"
+                >
+                  <CheckCircle2 size={20} />
+                  <span>Verify &amp; Sign In</span>
+                </button>
+
+                <button
+                  onClick={() => setStep('enter')}
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold
+                            bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all focus:outline-none focus:ring-4 focus:ring-slate-200"
+                  aria-label="Back to previous step"
+                >
+                  <ArrowLeft size={20} />
+                  <span>Back</span>
                 </button>
               </div>
 
