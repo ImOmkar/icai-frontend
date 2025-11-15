@@ -344,7 +344,7 @@ function Header({user, onLogout}) {
 
                 {user && (
                 <div className="pt-2 mt-2 border-t border-slate-700">
-                  <div className="px-4 py-2 text-xs font-semibold text-slate-400 uppercase tracking-wider">Admin</div>
+                  <div className="px-4 py-2 text-xs font-semibold text-slate-400 uppercase tracking-wider">{user.role === 'admin' ? "Admin" : "Member"}</div>
                   {user.role === 'admin'
                     ? adminLinks.map(link => (
                         <Link key={link.to} to={link.to} onClick={() => setMobileMenuOpen(false)}
