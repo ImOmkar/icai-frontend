@@ -107,11 +107,12 @@ export default function UserManagement() {
               <thead>
                 <tr className="bg-gradient-to-r from-slate-900 via-sky-900 to-slate-900 text-white">
                   <th className="text-left py-4 px-6 font-semibold">Name</th>
+                  <th className="text-left py-4 px-6 font-semibold">Role</th>
                   <th className="text-left py-4 px-6 font-semibold">Membership</th>
                   <th className="text-left py-4 px-6 font-semibold">Email</th>
                   <th className="text-left py-4 px-6 font-semibold">Phone</th>
                   <th className="text-left py-4 px-6 font-semibold">Status</th>
-                  <th className="text-left py-4 px-6 font-semibold">Actions</th>
+                  <th className="text-center py-4 px-6 font-semibold">Actions</th>
                 </tr>
               </thead>
               <tbody>
@@ -131,6 +132,17 @@ export default function UserManagement() {
                           </span>
                         )}
                       </div>
+                    </td>
+                    <td className="py-4 px-6">
+                      {u.role ? (
+                        <span className="px-4 py-2 rounded-full text-sm font-medium 
+                            bg-gray-100 text-gray-700"
+                            >
+                          {u.role}
+                        </span>
+                      ) : (
+                        <span className="text-slate-400">-</span>
+                      )}
                     </td>
                     <td className="py-4 px-6">
                       {u.membership ? (
