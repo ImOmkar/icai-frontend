@@ -7,6 +7,7 @@
       "phone": "9990000001",
       "email": "anon+1@example.com",
       "active": true,
+      "role": "admin",
       "anonymizedAt": "2025-11-14T09:00:12.121Z"
     },
     {
@@ -15,6 +16,7 @@
       "membership": "M-1002",
       "phone": "9990000002",
       "email": "ravi@example.com",
+      "role": "user",
       "active": true
     },
     {
@@ -23,6 +25,7 @@
       "membership": "M-1003",
       "phone": "9990000003",
       "email": "neha@example.com",
+      "role": "user",
       "active": true
     },
     {
@@ -31,6 +34,7 @@
       "membership": "M-1004",
       "phone": "9990000004",
       "email": "saurabh@example.com",
+      "role": "user",
       "active": true
     },
     {
@@ -39,6 +43,7 @@
       "membership": "M-1005",
       "phone": "9990000005",
       "email": "priya@example.com",
+      "role": "user",
       "active": true
     }
   ],
@@ -167,6 +172,18 @@
       "_bannerSize": 9628,
       "views": 0,
       "createdAt": "2025-11-15T06:09:51.465Z"
+    },
+    {
+      "id": "02fc",
+      "title": "gfhfghd",
+      "category": "Publications",
+      "body": "fghdfg",
+      "pdf": "",
+      "banner": "",
+      "videoUrl": "",
+      "published": true,
+      "views": 0,
+      "createdAt": "2025-11-15T09:20:07.278Z"
     }
   ],
   "suggestions": [

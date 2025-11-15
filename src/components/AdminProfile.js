@@ -3,6 +3,7 @@ import { User, Mail, Phone, CreditCard, RefreshCw, LogIn, Shield, CheckCircle, X
 import API from '../api';
 
 export default function AdminProfile() {
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem('sessionUser') || 'null'));
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -55,7 +56,7 @@ export default function AdminProfile() {
                 <div className="bg-white/10 p-3 rounded-xl backdrop-blur-sm">
                   <User className="text-white" size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Admin Profile</h3>
+                <h3 className="text-2xl font-bold text-white">{user.role === "admin" ? "Admin Profile" : "Member Profile"}</h3>
               </div>
             </div>
             
@@ -92,7 +93,7 @@ export default function AdminProfile() {
                   <User className="text-white" size={28} />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <h3 className="text-xl sm:text-2xl font-bold text-white">Admin Profile</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white">{user.role === "admin" ? "Admin Profile" : "Member Profile"}</h3>
                   <p className="text-slate-300 text-sm">Manage your account information</p>
                 </div>
               </div>
